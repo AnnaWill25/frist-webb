@@ -51,7 +51,13 @@ h2 { font-size:34px; letter-spacing:-1px; font-weight:800; margin-top:10px; }
 
 .kortnat { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-top:36px; }
 .kort { background:var(--card); border:1px solid var(--hair); border-radius:var(--radius); padding:26px; box-shadow:0 1px 2.5px rgba(28,26,23,.05); }
-.kort .ikon { width:44px; height:44px; border-radius:13px; background:var(--accent-soft); display:flex; align-items:center; justify-content:center; font-size:21px; }
+.kort .ikon { width:44px; height:44px; border-radius:13px; background:var(--accent-soft); color:var(--ink); display:flex; align-items:center; justify-content:center; }
+.ikon svg { width:22px; height:22px; stroke:currentColor; stroke-width:1.7; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+.ikon.korall { background:#f8e7dc; color:#c94f28; }
+.ikon.gron { background:#e2eee6; color:#2f8f5e; }
+.ikon.guld { background:#f4ead0; color:#a9812f; }
+.ikon.amber { background:#f1e7d1; color:#b1832e; }
+.ikon.terra { background:#f4e3de; color:#b0483b; }
 .kort h3 { font-size:17px; letter-spacing:-.3px; margin-top:14px; }
 .kort p { font-size:14.5px; color:var(--ink-soft); margin-top:7px; }
 

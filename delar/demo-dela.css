@@ -18,12 +18,8 @@
 .dm-s1 .dm-tap { animation-delay:1.6s; } .dm-s2 .dm-tap { animation-delay:6.2s; }
 @keyframes dmTap { 0%{transform:scale(0); opacity:0} 2%{transform:scale(1); opacity:1} 6%{transform:scale(1.6); opacity:0} 100%{transform:scale(0); opacity:0} }
 .dm-dimmad { opacity:.35; }
-.dm-ark { position:absolute; left:-4px; right:-4px; bottom:16px; background:var(--dm-card); border-radius:18px 18px 12px 12px; padding:8px 12px 12px; box-shadow:0 -8px 30px rgba(0,0,0,.14); transform:translateY(110%); animation:dmArk 16s infinite; }
-.dm-s2 .dm-ark { animation-delay:4.3s; } .dm-s3 .dm-ark { animation-delay:8.2s; }
-@keyframes dmArk { 0%{transform:translateY(110%)} 4%{transform:none} 100%{transform:none} }
-.dm-ark-grepp { width:34px; height:4px; border-radius:2px; background:#d6d2c9; margin:0 auto 10px; }
-.dm-ark-rub { font-size:11.5px; font-weight:700; }
-.dm-ark-sub { font-size:10.5px; color:var(--dm-soft); margin-top:4px; }
+.dm-dela .dm-s2 .dm-ark { animation-delay:4.3s; } .dm-dela .dm-s3 .dm-ark { animation-delay:8.2s; }
+.dm-dela .dm-ark-rub { font-family:'Inter',sans-serif; font-size:11.5px; font-weight:700; } .dm-dela .dm-ark-sub { color:var(--dm-soft); font-weight:400; font-size:10.5px; }
 .dm-appar { display:flex; justify-content:space-between; margin:12px 0 10px; }
 .dm-app { display:flex; flex-direction:column; align-items:center; gap:4px; font-size:8px; color:var(--dm-soft); width:46px; position:relative; }
 .dm-app i { display:block; width:38px; height:38px; border-radius:11px; }
@@ -34,5 +30,4 @@
 .dm-ark-frist { text-align:center; padding-bottom:14px; }
 .dm-bock { width:34px; height:34px; border-radius:50%; background:var(--dm-sage); color:#fff; font-weight:800; font-size:18px; line-height:34px; margin:4px auto 8px; }
 .dm-ark-frist .dm-knapp { margin-top:12px; }
-html[data-stil="editorial"] .dm-vik { background:#2b3630; } html[data-stil="editorial"] .dm-ark-grepp { background:#3a4740; }
-@media (prefers-reduced-motion: reduce) { .dm-dela .dm-ark { transform:none; animation:none; } .dm-dela .dm-tap { animation:none; } }
+html[data-stil="editorial"] .dm-vik { background:#2b3630; } html[data-stil="editorial"] @media (prefers-reduced-motion: reduce) { .dm-dela .dm-ark { transform:none; animation:none; } .dm-dela .dm-tap { animation:none; } }

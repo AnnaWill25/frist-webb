@@ -1,5 +1,5 @@
 /* Animerad demo: en telefon som visar Frists fyra steg i loop. Ren CSS, inga bilder. */
-.dm { display:flex; justify-content:center; --dm-bg:#f2f0ea; --dm-card:#fff; --dm-ink:#1c1a17; --dm-soft:#77726a; --dm-accent:#e0553d; --dm-sage:#5b6b58; --dm-hair:rgba(28,26,23,.09); }
+.dm { display:flex; justify-content:center; --dm-bg:#f2f0ea; --dm-card:#fff; --dm-ink:#1c1a17; --dm-soft:#77726a; --dm-accent:#e0553d; --dm-sage:#5b6b58; --dm-hair:rgba(28,26,23,.09); --dm-amber-soft:#f1e7d1; --dm-sage-soft:#e4eae0; --dm-accent-soft:#f9e4dd; --dm-amber:#b1832e; }
 .dm-fon { width:250px; aspect-ratio:9/19; border-radius:38px; background:#0f1512; padding:10px; box-shadow:0 40px 80px rgba(0,0,0,.35), inset 0 0 0 2px rgba(255,255,255,.08); }
 .dm-skarm { position:relative; width:100%; height:100%; border-radius:30px; background:var(--dm-bg); overflow:hidden; font-family:'Inter',-apple-system,sans-serif; color:var(--dm-ink); }
 .dm-top { display:flex; justify-content:space-between; padding:14px 18px 0; font-size:12px; font-weight:700; }
@@ -34,11 +34,38 @@
 .dm-mejl { margin-top:14px; }
 .dm-knapp { margin-top:12px; background:var(--dm-ink); color:#fff; font-size:10.5px; font-weight:600; text-align:center; padding:8px; border-radius:9px; }
 .dm-stor { font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:30px; letter-spacing:-1px; color:var(--dm-sage); line-height:1.1; margin-top:6px; }
-.dm-staplar { display:flex; gap:6px; align-items:flex-end; height:46px; margin-top:12px; }
-.dm-staplar i { flex:1; height:var(--h); border-radius:4px 4px 0 0; background:var(--dm-sage); opacity:.35; transform:scaleY(0); transform-origin:bottom; animation:dmVax 16s infinite; animation-delay:12.3s; }
-.dm-staplar i:nth-child(4) { opacity:1; background:var(--dm-accent); }
-@keyframes dmVax { 0%{transform:scaleY(0)} 6%{transform:scaleY(1)} 22%{transform:scaleY(1)} 25%{transform:scaleY(0)} 100%{transform:scaleY(0)} }
 @media (prefers-reduced-motion: reduce) {
-  .dm-sc, .dm-s2 .dm-kv, .dm-s2 .dm-cit, .dm-notis, .dm-staplar i, .dm-scan { animation:none; }
-  .dm-s2 { opacity:1; } .dm-s2 .dm-kv, .dm-s2 .dm-cit { opacity:1; } .dm-staplar i { transform:none; }
-}
+  .dm-sc, .dm-s2 .dm-kv, .dm-s2 .dm-cit, .dm-notis,   .dm-s2 { opacity:1; } .dm-s2 .dm-kv, .dm-s2 .dm-cit { opacity:1; } }
+
+/* Scener som speglar appens gränssnitt */
+.dm-hero { padding:6px 2px 4px; }
+.dm-stor span { font-size:11px; font-weight:500; color:var(--dm-soft); letter-spacing:0; font-family:'Inter',sans-serif; }
+.dm-catl { font-size:8.5px; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:var(--dm-soft); margin:10px 2px 5px; }
+.dm-lista { background:var(--dm-card); border-radius:14px; padding:2px 10px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-lrow { display:flex; align-items:center; gap:8px; padding:8px 0; border-top:1px solid var(--dm-hair); opacity:0; animation:dmRad 16s infinite; }
+.dm-lrow:first-child { border-top:none; }
+.dm-lrow:nth-child(1){animation-delay:.6s} .dm-lrow:nth-child(2){animation-delay:.9s} .dm-lrow:nth-child(3){animation-delay:1.2s} .dm-lrow:nth-child(4){animation-delay:1.5s}
+.dm-lrow i, .dm-todo i { width:26px; height:26px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-style:normal; font-size:12px; flex:none; background:var(--dm-hair); }
+.dm-lrow div { flex:1; min-width:0; } .dm-lrow b { display:block; font-size:10.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .dm-lrow span, .dm-todo span { display:block; font-size:9px; color:var(--dm-soft); }
+.dm-lrow em { font-style:normal; font-size:10.5px; font-weight:600; white-space:nowrap; } .dm-lrow small { font-size:8px; font-weight:500; color:var(--dm-soft); }
+.dm-todo { display:flex; gap:8px; align-items:flex-start; background:var(--dm-card); border-radius:12px; padding:10px; margin-top:10px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-todo > div { flex:1; } .dm-todo b { font-size:10.5px; font-weight:600; display:block; } .dm-todo span { margin-top:1px; }
+.dm-s2 .dm-todo { opacity:0; animation:dmRad 16s infinite; animation-delay:6.6s; }
+.dm-ark { position:absolute; left:-4px; right:-4px; bottom:16px; background:var(--dm-card); border-radius:18px 18px 12px 12px; padding:8px 12px 12px; box-shadow:0 -8px 30px rgba(0,0,0,.14); transform:translateY(110%); animation:dmArk 16s infinite; }
+.dm-s3 .dm-ark { animation-delay:8.3s; }
+@keyframes dmArk { 0%{transform:translateY(110%)} 4%{transform:none} 100%{transform:none} }
+.dm-ark-grepp { width:34px; height:4px; border-radius:2px; background:#d6d2c9; margin:0 auto 10px; }
+.dm-ark-rub { font-family:'Fraunces',Georgia,serif; font-size:14px; font-weight:600; }
+.dm-ark-sub { font-size:9.5px; color:var(--dm-sage); font-weight:600; margin-top:2px; }
+.dm-ark-kontakt .dm-knapp { margin-top:10px; }
+.dm-amber { background:var(--dm-amber-soft); color:var(--dm-ink); border-radius:10px; padding:8px 10px; font-size:9.5px; margin-top:8px; line-height:1.4; }
+.dm-amber b { display:block; color:var(--dm-amber); font-size:9px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:2px; }
+.dm-ark-kontakt .dm-kv { font-size:9.5px; padding:6px 0; } .dm-ark-kontakt .dm-kv:first-of-type { margin-top:6px; border-top:none; }
+.dm-ins-hero { background:var(--dm-sage); color:#fff; border-radius:14px; padding:12px; margin-top:8px; }
+.dm-ins-hero .dm-lev { color:rgba(255,255,255,.85); } .dm-ins-hero .dm-stor { color:#fff; font-size:26px; } .dm-ins-hero .dm-stor span { color:rgba(255,255,255,.8); }
+.dm-ins { margin-top:0; padding:8px 10px; } .dm-ins .dm-todo { background:transparent; box-shadow:none; padding:0; margin:0; }
+.dm-chip { display:inline-block; font-style:normal; font-size:8.5px; font-weight:600; padding:2px 7px; border-radius:99px; margin-top:5px; }
+.dm-chip-amber { background:var(--dm-amber-soft); color:var(--dm-amber); } .dm-chip-green { background:var(--dm-sage-soft); color:var(--dm-sage); }
+.dm-s4 .dm-catl, .dm-s4 .dm-ins { opacity:0; animation:dmRad 16s infinite; }
+.dm-s4 .dm-d1{animation-delay:12.6s} .dm-s4 .dm-d2{animation-delay:12.8s} .dm-s4 .dm-d3{animation-delay:13.3s} .dm-s4 .dm-d4{animation-delay:13.5s}
+@media (prefers-reduced-motion: reduce) { .dm-lrow, .dm-s2 .dm-todo, .dm-s4 .dm-catl, .dm-s4 .dm-ins { animation:none; opacity:1; } .dm-ark { animation:none; transform:none; } }

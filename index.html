@@ -4,52 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frist, missa aldrig tids-fristen</title>
-<meta name="description" content="Frist läser hushållets avtal med AI och säger till innan det kostar dig pengar. Bindningstider, uppsägningar, förnyelser och dolda utgifter, samlat i en app.">
+<meta name="description" content="Frist läser hushållets avtal med AI, håller koll på bindningstider och uppsägningar, och säger till innan det kostar dig pengar. Allt stannar på din telefon.">
+<meta property="og:title" content="Frist, missa aldrig tids-fristen">
+<meta property="og:description" content="Appen som läser hushållets avtal och säger till innan det kostar dig pengar.">
+<meta property="og:image" content="https://frist.nu/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="stil.css">
+<link rel="stylesheet" href="delar/demo.css">
 <link rel="icon" type="image/svg+xml" href="ikon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="/">
-      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M 348 262 L 676 262 C 676 408 556 466 542 512 C 556 558 676 616 676 762 L 348 762 C 348 616 468 558 482 512 C 468 466 348 408 348 262 Z" fill="none" stroke="#1c1a17" stroke-width="52" stroke-linejoin="round"/><path d="M 392 748 L 632 748 C 632 700 560 668 512 646 C 464 668 392 700 392 748 Z" fill="#d9603a"/><line x1="306" y1="252" x2="718" y2="252" stroke="#1c1a17" stroke-width="56" stroke-linecap="round"/><line x1="306" y1="772" x2="718" y2="772" stroke="#1c1a17" stroke-width="56" stroke-linecap="round"/></svg>
-      Frist
-    </a>
+    <a class="logo" href="/"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M 348 262 L 676 262 C 676 408 556 466 542 512 C 556 558 676 616 676 762 L 348 762 C 348 616 468 558 482 512 C 468 466 348 408 348 262 Z" fill="none" stroke="currentColor" stroke-width="56" stroke-linejoin="round"/><path d="M 392 748 L 632 748 C 632 700 560 668 512 646 C 464 668 392 700 392 748 Z" fill="#e0553d"/><line x1="300" y1="252" x2="724" y2="252" stroke="currentColor" stroke-width="60" stroke-linecap="round"/><line x1="300" y1="772" x2="724" y2="772" stroke="currentColor" stroke-width="60" stroke-linecap="round"/></svg>Frist</a>
     <nav class="nav-links">
       <a href="#sa-funkar-det">Så funkar det</a>
       <a href="#darfor">Därför Frist</a>
+      <a href="#fraga">Fråga Frist</a>
       <a href="#priser">Priser</a>
-      <a href="#integritet">Integritet</a>
+      <a href="#integritet">Säkerhet</a>
       <a href="support.html">Support</a>
     </nav>
+    <a class="knapp liten" href="mailto:frist@mindact.ai?subject=Jag%20vill%20testa%20Frist">Bli testpilot</a>
   </div>
 </header>
 
 <div class="hero">
   <div class="wrap">
-    <div>
+    <div class="hero-text">
+      <div class="etikett ljus">Hushållets avtal, på en plats</div>
       <h1>Missa aldrig <em>tids&#8209;fristen</em></h1>
-      <p class="under">Frist läser hushållets avtal med AI och säger till innan det kostar dig pengar. Bindningstider, uppsägningar, förnyelser och kostnader som bara tickar på, samlat på ett ställe.</p>
+      <p class="under">Frist läser hushållets avtal med AI, räknar ut sista dag att säga upp och säger till i tid. Bindningstider, förnyelser och kostnader som bara tickar på, samlat på din telefon.</p>
       <div class="cta">
         <a class="knapp" href="mailto:frist@mindact.ai?subject=Jag%20vill%20testa%20Frist">Bli testpilot</a>
         <a class="knapp kontur" href="#sa-funkar-det">Se hur det funkar</a>
-        <div class="snart">Snart på App Store. Just nu i sluten testning.</div>
       </div>
+      <div class="snart">Snart på App Store. Just nu i sluten testning, inbjudna testare får Premium gratis i sex månader.</div>
+      <ul class="hero-punkter">
+        <li>Avtalen stannar på din telefon</li>
+        <li>Inga provisioner, ingen bankkoppling</li>
+        <li>Byggt i Sverige, drift i EU</li>
+      </ul>
     </div>
-    <div class="hero-glas">
-      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Frists timglas">
-        <path d="M 348 262 L 676 262 C 676 408 556 466 542 512 C 556 558 676 616 676 762 L 348 762 C 348 616 468 558 482 512 C 468 466 348 408 348 262 Z" fill="rgba(246,242,234,0.07)"/>
-        <ellipse cx="512" cy="478" rx="52" ry="15" fill="#d9603a"/>
-        <rect x="505" y="488" width="14" height="182" rx="7" fill="#d9603a"/>
-        <path d="M 392 748 L 632 748 C 632 700 560 668 512 646 C 464 668 392 700 392 748 Z" fill="#d9603a"/>
-        <path d="M 348 262 L 676 262 C 676 408 556 466 542 512 C 556 558 676 616 676 762 L 348 762 C 348 616 468 558 482 512 C 468 466 348 408 348 262 Z" fill="none" stroke="#f6f2ea" stroke-width="30" stroke-linejoin="round" stroke-linecap="round"/>
-        <line x1="306" y1="252" x2="718" y2="252" stroke="#f6f2ea" stroke-width="34" stroke-linecap="round"/>
-        <line x1="306" y1="772" x2="718" y2="772" stroke="#f6f2ea" stroke-width="34" stroke-linecap="round"/>
-      </svg>
+    <div class="hero-demo">
+      <div class="dm" aria-label="Animerad demo av Frist">
+  <div class="dm-fon"><div class="dm-skarm">
+    <div class="dm-top"><span class="dm-brand">Frist</span><span class="dm-tid">09:41</span></div>
+    <div class="dm-sc dm-s1">
+      <div class="dm-dok"><div class="dm-rad w40 dm-rub"></div><div class="dm-rad w90"></div><div class="dm-rad w70"></div><div class="dm-rad w80"></div><div class="dm-rad w60"></div><div class="dm-rad w85"></div><div class="dm-rad w50"></div><div class="dm-scan"></div></div>
+      <div class="dm-cap">Fota eller dela avtalet</div>
+    </div>
+    <div class="dm-sc dm-s2">
+      <div class="dm-kort"><div class="dm-namn">Elavtal fast pris</div><div class="dm-lev">Fortum · kundnr 4471 023</div>
+        <div class="dm-kv"><span>Pris</span><b>1 240 kr/mån</b></div>
+        <div class="dm-kv"><span>Bindningstid till</span><b>14 feb 2027</b></div>
+        <div class="dm-kv"><span>Uppsägningstid</span><b>1 månad</b></div>
+        <div class="dm-kv dm-frist"><span>Säg upp senast</span><b>14 jan 2027</b></div>
+        <div class="dm-cit">Ur dokumentet: ”Bindningstid 24 mån, t.o.m. 2027-02-14”</div>
+      </div>
+      <div class="dm-cap">AI:n läser av, med citat ur dokumentet</div>
+    </div>
+    <div class="dm-sc dm-s3">
+      <div class="dm-notis"><div class="dm-nik"></div><div><b>Frist · nu</b><div>30 dagar kvar: säg upp Fortum senast 14 jan, annars förlängs avtalet ett år.</div></div></div>
+      <div class="dm-kort dm-mejl"><div class="dm-lev">Uppsägningsmejl, klart att skicka</div><div class="dm-rad w90"></div><div class="dm-rad w70"></div><div class="dm-rad w80"></div><div class="dm-knapp">Skicka från din mejl</div></div>
+      <div class="dm-cap">Påminnelse i rätt tid, mejlet redan skrivet</div>
+    </div>
+    <div class="dm-sc dm-s4">
+      <div class="dm-kort"><div class="dm-lev">Månadens insikt</div><div class="dm-stor">1 240 kr</div><div class="dm-lev">att hämta den här månaden</div>
+        <div class="dm-staplar"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:92%"></i><i style="--h:30%"></i><i style="--h:70%"></i></div>
+        <div class="dm-kv"><span>Två streamingtjänster</span><b>dubbelt?</b></div>
+        <div class="dm-kv"><span>Fem försäkringar, tre bolag</span><b>samlingsrabatt?</b></div>
+      </div>
+      <div class="dm-cap">Insikter som säger vad du gör nu</div>
+    </div>
+  </div></div>
+</div>
+
     </div>
   </div>
 </div>
@@ -57,55 +91,75 @@
 <section id="sa-funkar-det">
   <div class="wrap">
     <div class="etikett">Så funkar det</div>
-    <h2>Fota avtalet, Frist gör resten</h2>
-    <p class="ingress">Ingen bankkoppling, inga blanketter. Du är igång på minuten.</p>
+    <h2>Fota avtalet. Frist gör resten.</h2>
+    <p class="ingress">Ingen bankkoppling, inga blanketter. Du är igång på en minut.</p>
     <div class="steg">
-      <div class="kort"><span class="stegnr">1</span><div class="ikon korall"><svg viewBox="0 0 24 24"><path d="M4 8h3l1.4-2h7.2L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.2"/></svg></div><h3>Fota eller ladda upp</h3><p>Avtal, faktura, kvitto eller skärmdump. AI:n läser leverantör, pris, bindningstid, uppsägningstid och kundnummer.</p></div>
-      <div class="kort"><span class="stegnr">2</span><div class="ikon amber"><svg viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h3l2 2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg></div><h3>Allt samlat i en vy</h3><p>Avtal, abonnemang, försäkringar, lån och hushållshändelser som besiktning och sotning. Du ser vart pengarna går.</p></div>
-      <div class="kort"><span class="stegnr">3</span><div class="ikon gron"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div><h3>Påminnelser i rätt tid</h3><p>Frist räknar ut sista dag att säga upp och påminner via mobilen och mejl, innan det är för sent.</p></div>
+      <div class="kort"><span class="stegnr">1</span><div class="ikon korall"><svg viewBox="0 0 24 24"><path d="M4 8h3l1.4-2h7.2L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.2"/></svg></div><h3>Fota, ladda upp eller dela</h3><p>Avtal, faktura eller skärmdump. Dela direkt från mejlen. AI:n plockar ut leverantör, pris, bindningstid, uppsägningstid och kundnummer, och visar var i dokumentet det står.</p></div>
+      <div class="kort"><span class="stegnr">2</span><div class="ikon sage"><svg viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h3l2 2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg></div><h3>Allt samlat, i en vy</h3><p>Abonnemang, försäkringar, lån och hushållshändelser som besiktning och sotning. Fristkartan visar vad som händer när, och vart pengarna går.</p></div>
+      <div class="kort"><span class="stegnr">3</span><div class="ikon amber"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div><h3>Påminnelse i rätt tid</h3><p>Frist räknar ut sista dag att säga upp och påminner i mobilen eller via mejl, innan det är för sent. Uppsägningsmejlet är redan skrivet.</p></div>
     </div>
   </div>
 </section>
 
-<section id="darfor" style="padding-top:0">
+<section id="darfor" class="tonad">
   <div class="wrap">
     <div class="etikett">Därför Frist</div>
     <h2>Det här gör ingen annan</h2>
     <div class="kortnat">
-      <div class="kort"><div class="ikon"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div><h3>Vi läser själva avtalen</h3><p>Bankernas tjänster ser bara transaktioner. Frist läser villkoren, pris, bindningstid, uppsägningstid och dina rättigheter, i allt hushållet är bundet till.</p></div>
-      <div class="kort"><div class="ikon terra"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div><h3>Missa aldrig en uppsägning</h3><p>Påminnelser i rätt tid före deadline för uppsägning eller förnyelse. Fånga chansen till bättre pris, och hitta kostnader som ingen använder.</p></div>
-      <div class="kort"><div class="ikon guld"><svg viewBox="0 0 24 24"><path d="M12 4v16M8 20h8"/><path d="M12 6 6 8m6-2 6 2"/><path d="M6 8 3.5 14a2.8 2.8 0 0 0 5 0zM18 8l-2.5 6a2.8 2.8 0 0 0 5 0z"/></svg></div><h3>Uppsägningsrätt-väckaren</h3><p>Enligt svensk lag måste leverantören påminna dig före automatisk förlängning. Missar de det har du rätt att säga upp direkt.</p></div>
-      <div class="kort"><div class="ikon amber"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.4"/><circle cx="6" cy="17" r="2.4"/><path d="M8.2 8.4 20 18M8.2 15.6 20 6"/></svg></div><h3>Frist skriver uppsägningen</h3><p>Ett färdigt uppsägningsmejl med avtal och kundnummer ifyllt, redo att skickas från din egen mejl.</p></div>
-      <div class="kort"><div class="ikon terra"><svg viewBox="0 0 24 24"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16l4-3.5"/></svg></div><h3>Hushållshändelser bevakas</h3><p>Besiktning, sotning, däckbyte, deklaration. Sånt som inte är avtal men kostar dyrt att missa.</p></div>
-      <div class="kort"><div class="ikon gron"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></div><h3>Ingen andel av din besparing</h3><p>Inga provisioner och inga dolda affärer med leverantörer. Frist jobbar bara för dig.</p></div>
+      <div class="kort"><div class="ikon "><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg></div><h3>Vi läser själva avtalen</h3><p>Bankernas tjänster ser bara transaktioner. Frist läser villkoren: pris, bindningstid, uppsägningstid och dina rättigheter, i allt hushållet är bundet till.</p></div>
+      <div class="kort"><div class="ikon korall"><svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div><h3>Missa aldrig en uppsägning</h3><p>Påminnelser i rätt tid före deadline för uppsägning eller förnyelse. Fånga chansen till bättre pris, och hitta kostnader som ingen använder.</p></div>
+      <div class="kort"><div class="ikon guld"><svg viewBox="0 0 24 24"><path d="M12 4v16M8 20h8"/><path d="M12 6 6 8m6-2 6 2"/><path d="M6 8 3.5 14a2.8 2.8 0 0 0 5 0zM18 8l-2.5 6a2.8 2.8 0 0 0 5 0z"/></svg></div><h3>Uppsägningsrätt-väckaren</h3><p>Enligt svensk lag måste leverantören påminna dig före automatisk förlängning. Missar de det har du rätt att säga upp direkt. Frist hjälper dig hålla koll.</p></div>
+      <div class="kort"><div class="ikon amber"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.4"/><circle cx="6" cy="17" r="2.4"/><path d="M8.2 8.4 20 18M8.2 15.6 20 6"/></svg></div><h3>Frist skriver uppsägningen</h3><p>Ett färdigt uppsägningsmejl med avtal och kundnummer ifyllt, redo att skickas från din egen mejl. Saknas kontaktvägen letar Frist upp den, med källa.</p></div>
+      <div class="kort"><div class="ikon sage"><svg viewBox="0 0 24 24"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16l4-3.5"/></svg></div><h3>Hushållshändelser bevakas</h3><p>Besiktning, sotning, däckbyte, deklaration. Sånt som inte är avtal men kostar dyrt att missa.</p></div>
+      <div class="kort"><div class="ikon sage"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></div><h3>Ingen andel av din besparing</h3><p>Inga provisioner och inga affärer med leverantörer. Frist jobbar bara för dig, och säger ärligt när ditt nuvarande avtal är bra.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fraga">
+  <div class="wrap tva">
+    <div>
+      <div class="etikett">Fråga Frist och månadsinsikter</div>
+      <h2>Som att ha en vän som läst alla dina avtal</h2>
+      <p class="ingress">Fråga vad som helst om hushållets avtal. Frist svarar bara utifrån dina egna dokument, citerar var det står, och kollar aktuella uppgifter på webben när det behövs.</p>
+      <p class="ingress">Den 1:a varje månad går AI:n igenom allt: vad du bör agera på nu, var det finns pengar att hämta, dubbla tjänster, samlingsrabatter du kan fråga om. Och ställer frågor tillbaka när något ser konstigt ut.</p>
+      <p class="fin">Frist tas fram med AI-stöd. Dubbelkolla alltid mot dina avtal innan du agerar. Frist ger information och vägledning, inte finansiell eller juridisk rådgivning.</p>
+    </div>
+    <div class="chat">
+      <div class="bubbla du">Betalar vi dubbelt för något?</div>
+      <div class="bubbla frist">Troligen, för musik. Ni har både Spotify Familj (179 kr/mån) och Apple One (299 kr/mån) där Apple Music ingår. Säg upp den ni använder minst, så sparar ni upp till 2 148 kr per år.<div class="kalla">Källa: Spotify, faktura 2 sep · Apple, kvitto 28 aug</div></div>
+      <div class="bubbla du">Vilket avtal bör jag se över först?</div>
+      <div class="bubbla frist">Elavtalet hos Fortum. Bindningstiden går ut 14 feb och uppsägningstiden är en månad, så senast 14 jan behöver du bestämma dig. Vill du att jag jämför med dagens priser?<div class="kalla">Källa: Elavtal, sidan 2, ”Bindningstid 24 mån”</div></div>
     </div>
   </div>
 </section>
 
 <section class="priser" id="priser">
   <div class="wrap">
-    <div class="etikett">Priser</div>
+    <div class="etikett ljus">Priser</div>
     <h2>Börja gratis, uppgradera när du vill</h2>
-    <p class="ingress">Premium delas av hela hushållet.</p>
+    <p class="ingress">Premium delas av hela hushållet. Under betan får inbjudna testare Premium gratis i sex månader.</p>
     <div class="kortnat">
       <div class="priskort">
         <h3>Gratis</h3>
         <div class="pris">0 kr</div>
         <ul>
           <li>Upp till 7 avtal</li>
-          <li>AI-avläsning av dokument</li>
+          <li>AI-avläsning med citat ur dokumentet</li>
           <li>Påminnelser i mobil och mejl</li>
           <li>3 AI-jämförelser ingår</li>
+          <li>Första månadsinsikten gratis</li>
         </ul>
       </div>
       <div class="priskort markt">
-        <span class="pristag">Mest vald</span>
+        <span class="pristag">Hela hushållet</span>
         <h3 style="margin-top:10px">Premium</h3>
         <div class="pris">49 kr <span>per månad</span></div>
         <ul>
           <li>Obegränsat antal avtal</li>
           <li>Obegränsad AI-avläsning</li>
           <li>Månadsinsikter, det du kan agera på nu</li>
+          <li>Fråga Frist om dina avtal</li>
           <li>Delas av hela hushållet</li>
         </ul>
       </div>
@@ -114,7 +168,7 @@
         <div class="pris">12 kr <span>per jämförelse</span></div>
         <ul>
           <li>Djup jämförelse av ett avtal</li>
-          <li>Aktuella alternativ och priser</li>
+          <li>Aktuella alternativ och priser, med källor</li>
           <li>3 gratis för alla</li>
         </ul>
       </div>
@@ -124,21 +178,30 @@
 
 <section id="integritet">
   <div class="wrap">
-    <div class="etikett">Integritet</div>
+    <div class="etikett">Säkerhet och integritet</div>
     <h2>Dina avtal är dina</h2>
-    <div class="kortnat" style="grid-template-columns:repeat(auto-fit, minmax(300px, 1fr))">
-      <div class="kort"><div class="lofte"><span class="bock">✓</span><div class="p"><b>Dokumenten stannar hos dig</b>Foton och PDF:er sparas lokalt på din enhet, inte på våra servrar.</div></div></div>
-      <div class="kort"><div class="lofte"><span class="bock">✓</span><div class="p"><b>Vi säljer aldrig din data</b>Inga annonser, ingen försäljning av uppgifter, ingen delning med tredje part för marknadsföring.</div></div></div>
-      <div class="kort"><div class="lofte"><span class="bock">✓</span><div class="p"><b>AI:n tränar inte på dig</b>Dina dokument används aldrig för att träna AI-modeller.</div></div></div>
+    <div class="kortnat fyra">
+      <div class="kort lofte"><span class="bock">✓</span><div class="p"><b>Allt stannar på din telefon</b>Avtal, foton och PDF:er sparas lokalt på din enhet. På våra servrar finns bara din mejladress och de mejlpåminnelser du valt.</div></div>
+      <div class="kort lofte"><span class="bock">✓</span><div class="p"><b>Inbrottssäkert konto</b>Engångskod till din mejl, valfritt lösenord och tvåfaktor med autentiseringsapp. Utan din telefon kommer ingen in.</div></div>
+      <div class="kort lofte"><span class="bock">✓</span><div class="p"><b>Drift i EU</b>Konto och serverfunktioner körs i Stockholm. AI-nycklar finns bara på servern, aldrig i appen.</div></div>
+      <div class="kort lofte"><span class="bock">✓</span><div class="p"><b>Vi säljer aldrig din data</b>Inga annonser, ingen försäljning, ingen träning av AI-modeller på dina dokument. Radera allt själv i appen när du vill.</div></div>
     </div>
-    <p class="ingress" style="margin-top:26px">Läs mer i vår <a href="integritetspolicy.html">integritetspolicy</a>.</p>
+    <p class="ingress" style="margin-top:26px">Läs mer i vår <a href="integritetspolicy.html">integritetspolicy</a> och våra <a href="villkor.html">användarvillkor</a>.</p>
+  </div>
+</section>
+
+<section class="slut">
+  <div class="wrap">
+    <h2>Vill du testa Frist före alla andra?</h2>
+    <p class="ingress">Mejla oss så skickar vi en inbjudan till TestFlight och en kod som ger Premium gratis i sex månader.</p>
+    <a class="knapp" href="mailto:frist@mindact.ai?subject=Jag%20vill%20testa%20Frist">Bli testpilot</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap fot">
     <div>
-      <b style="color:var(--ink)">Frist</b> · Missa aldrig tids-fristen<br>
+      <b>Frist</b> · Missa aldrig tids-fristen<br>
       En tjänst från Mindact Solutions AB · <a href="mailto:frist@mindact.ai">frist@mindact.ai</a>
     </div>
     <div class="fotlankar">

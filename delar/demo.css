@@ -1,0 +1,44 @@
+/* Animerad demo: en telefon som visar Frists fyra steg i loop. Ren CSS, inga bilder. */
+.dm { display:flex; justify-content:center; --dm-bg:#f2f0ea; --dm-card:#fff; --dm-ink:#1c1a17; --dm-soft:#77726a; --dm-accent:#e0553d; --dm-sage:#5b6b58; --dm-hair:rgba(28,26,23,.09); }
+.dm-fon { width:250px; aspect-ratio:9/19; border-radius:38px; background:#0f1512; padding:10px; box-shadow:0 40px 80px rgba(0,0,0,.35), inset 0 0 0 2px rgba(255,255,255,.08); }
+.dm-skarm { position:relative; width:100%; height:100%; border-radius:30px; background:var(--dm-bg); overflow:hidden; font-family:'Inter',-apple-system,sans-serif; color:var(--dm-ink); }
+.dm-top { display:flex; justify-content:space-between; padding:14px 18px 0; font-size:12px; font-weight:700; }
+.dm-brand { font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:15px; }
+.dm-tid { opacity:.5; font-weight:600; }
+.dm-sc { position:absolute; left:14px; right:14px; top:48px; bottom:14px; opacity:0; animation:dmScen 16s infinite; }
+.dm-s2 { animation-delay:4s; } .dm-s3 { animation-delay:8s; } .dm-s4 { animation-delay:12s; }
+@keyframes dmScen { 0%{opacity:0; transform:translateY(10px)} 4%{opacity:1; transform:none} 23%{opacity:1; transform:none} 26%{opacity:0; transform:translateY(-8px)} 100%{opacity:0} }
+.dm-cap { position:absolute; left:0; right:0; bottom:0; text-align:center; font-size:11px; font-weight:600; color:var(--dm-soft); }
+.dm-dok { position:relative; background:var(--dm-card); border-radius:14px; padding:18px 16px; margin-top:10px; box-shadow:0 1px 3px rgba(0,0,0,.06); overflow:hidden; }
+.dm-rad { height:7px; border-radius:4px; background:#e6e2d9; margin-top:9px; }
+.dm-rad.dm-rub { height:10px; background:#cfcac0; margin-top:0; }
+.w40{width:40%} .w50{width:50%} .w60{width:60%} .w70{width:70%} .w80{width:80%} .w85{width:85%} .w90{width:90%}
+.dm-scan { position:absolute; left:0; right:0; height:34px; top:-40px; background:linear-gradient(to bottom, rgba(224,85,61,0), rgba(224,85,61,.18) 60%, rgba(224,85,61,.55)); border-bottom:2px solid var(--dm-accent); animation:dmScan 4s infinite; }
+@keyframes dmScan { 0%{top:-40px} 10%{top:-40px} 70%{top:100%} 100%{top:100%} }
+.dm-kort { background:var(--dm-card); border-radius:14px; padding:14px; margin-top:8px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-namn { font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:16px; letter-spacing:-.2px; }
+.dm-lev { font-size:10.5px; color:var(--dm-soft); margin-top:2px; }
+.dm-kv { display:flex; justify-content:space-between; font-size:11px; padding:7px 0; border-top:1px solid var(--dm-hair); margin-top:0; }
+.dm-kv span { color:var(--dm-soft); } .dm-kv b { font-weight:600; }
+.dm-kv.dm-frist { color:var(--dm-accent); } .dm-kv.dm-frist span { color:var(--dm-accent); }
+.dm-kort .dm-kv:first-of-type { margin-top:10px; }
+.dm-s2 .dm-kv, .dm-s2 .dm-cit { opacity:0; animation:dmRad 16s infinite; }
+.dm-s2 .dm-kv:nth-of-type(1){animation-delay:4.5s} .dm-s2 .dm-kv:nth-of-type(2){animation-delay:4.9s} .dm-s2 .dm-kv:nth-of-type(3){animation-delay:5.3s} .dm-s2 .dm-kv:nth-of-type(4){animation-delay:5.7s} .dm-s2 .dm-cit{animation-delay:6.2s}
+@keyframes dmRad { 0%{opacity:0; transform:translateX(-6px)} 3%{opacity:1; transform:none} 20%{opacity:1} 22%{opacity:0} 100%{opacity:0} }
+.dm-cit { font-size:9.5px; color:var(--dm-soft); font-style:italic; margin-top:8px; }
+.dm-notis { display:flex; gap:10px; background:rgba(255,255,255,.92); backdrop-filter:blur(10px); border-radius:16px; padding:11px 12px; font-size:10.5px; box-shadow:0 8px 24px rgba(0,0,0,.12); transform:translateY(-70px); animation:dmNotis 16s infinite; animation-delay:8s; }
+.dm-notis b { font-size:10px; display:block; margin-bottom:2px; }
+.dm-nik { width:26px; height:26px; border-radius:8px; background:#0f1512; flex:none; position:relative; }
+.dm-nik::after { content:''; position:absolute; left:8px; top:6px; width:10px; height:14px; border:2px solid #f2f0ea; border-radius:2px; clip-path:polygon(0 0,100% 0,50% 50%,100% 100%,0 100%,50% 50%); background:var(--dm-accent); }
+@keyframes dmNotis { 0%{transform:translateY(-70px)} 5%{transform:none} 100%{transform:none} }
+.dm-mejl { margin-top:14px; }
+.dm-knapp { margin-top:12px; background:var(--dm-ink); color:#fff; font-size:10.5px; font-weight:600; text-align:center; padding:8px; border-radius:9px; }
+.dm-stor { font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:30px; letter-spacing:-1px; color:var(--dm-sage); line-height:1.1; margin-top:6px; }
+.dm-staplar { display:flex; gap:6px; align-items:flex-end; height:46px; margin-top:12px; }
+.dm-staplar i { flex:1; height:var(--h); border-radius:4px 4px 0 0; background:var(--dm-sage); opacity:.35; transform:scaleY(0); transform-origin:bottom; animation:dmVax 16s infinite; animation-delay:12.3s; }
+.dm-staplar i:nth-child(4) { opacity:1; background:var(--dm-accent); }
+@keyframes dmVax { 0%{transform:scaleY(0)} 6%{transform:scaleY(1)} 22%{transform:scaleY(1)} 25%{transform:scaleY(0)} 100%{transform:scaleY(0)} }
+@media (prefers-reduced-motion: reduce) {
+  .dm-sc, .dm-s2 .dm-kv, .dm-s2 .dm-cit, .dm-notis, .dm-staplar i, .dm-scan { animation:none; }
+  .dm-s2 { opacity:1; } .dm-s2 .dm-kv, .dm-s2 .dm-cit { opacity:1; } .dm-staplar i { transform:none; }
+}

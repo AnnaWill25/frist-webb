@@ -1,0 +1,38 @@
+/* Dela-demo: mejl → Dela-knappen → välj Frist → Skickat → Frist läser av. Bygger på demo.css. */
+.dm-dela .dm-mailrub { position:relative; display:inline-block; min-width:40px; }
+.dm-dela .dm-mailrub i { font-style:normal; position:absolute; left:0; top:0; white-space:nowrap; }
+.dm-dela .dm-l1 { font-family:'Inter',sans-serif; font-weight:700; animation:dmL1 16s infinite; }
+.dm-dela .dm-l2 { opacity:0; animation:dmL2 16s infinite; }
+@keyframes dmL1 { 0%{opacity:1} 74%{opacity:1} 77%{opacity:0} 98%{opacity:0} 100%{opacity:1} }
+@keyframes dmL2 { 0%{opacity:0} 74%{opacity:0} 77%{opacity:1} 98%{opacity:1} 100%{opacity:0} }
+.dm-mail { background:var(--dm-card); border-radius:14px; padding:14px; margin-top:10px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-fran { display:flex; justify-content:space-between; font-size:11px; } .dm-fran span { color:var(--dm-soft); }
+.dm-amne { font-size:13px; font-weight:600; margin-top:4px; margin-bottom:6px; }
+.dm-bilaga { display:flex; align-items:center; gap:8px; margin-top:14px; padding:9px 10px; border:1px solid var(--dm-hair); border-radius:10px; font-size:10.5px; font-weight:600; }
+.dm-pdf { background:var(--dm-accent); color:#fff; font-size:8px; font-weight:800; padding:3px 5px; border-radius:4px; letter-spacing:.05em; }
+.dm-verktyg { position:absolute; left:0; right:0; bottom:30px; display:flex; justify-content:space-around; padding:10px 6px; background:var(--dm-card); border-radius:14px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-vik { width:22px; height:22px; border-radius:6px; background:#e6e2d9; position:relative; }
+.dm-vik.dm-dela-ik { background:transparent; color:#3b82f6; }
+.dm-vik.dm-dela-ik svg { width:22px; height:22px; stroke:currentColor; stroke-width:1.8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+.dm-tap { position:absolute; left:50%; top:50%; width:34px; height:34px; margin:-17px 0 0 -17px; border-radius:50%; background:rgba(224,85,61,.35); border:2px solid var(--dm-accent); transform:scale(0); animation:dmTap 16s infinite; pointer-events:none; }
+.dm-s1 .dm-tap { animation-delay:1.6s; } .dm-s2 .dm-tap { animation-delay:6.2s; }
+@keyframes dmTap { 0%{transform:scale(0); opacity:0} 2%{transform:scale(1); opacity:1} 6%{transform:scale(1.6); opacity:0} 100%{transform:scale(0); opacity:0} }
+.dm-dimmad { opacity:.35; }
+.dm-ark { position:absolute; left:-4px; right:-4px; bottom:16px; background:var(--dm-card); border-radius:18px 18px 12px 12px; padding:8px 12px 12px; box-shadow:0 -8px 30px rgba(0,0,0,.14); transform:translateY(110%); animation:dmArk 16s infinite; }
+.dm-s2 .dm-ark { animation-delay:4.3s; } .dm-s3 .dm-ark { animation-delay:8.2s; }
+@keyframes dmArk { 0%{transform:translateY(110%)} 4%{transform:none} 100%{transform:none} }
+.dm-ark-grepp { width:34px; height:4px; border-radius:2px; background:#d6d2c9; margin:0 auto 10px; }
+.dm-ark-rub { font-size:11.5px; font-weight:700; }
+.dm-ark-sub { font-size:10.5px; color:var(--dm-soft); margin-top:4px; }
+.dm-appar { display:flex; justify-content:space-between; margin:12px 0 10px; }
+.dm-app { display:flex; flex-direction:column; align-items:center; gap:4px; font-size:8px; color:var(--dm-soft); width:46px; position:relative; }
+.dm-app i { display:block; width:38px; height:38px; border-radius:11px; }
+.dm-app-frist { color:var(--dm-ink); font-weight:600; }
+.dm-frist-ik { background:#0f1512 !important; display:flex !important; align-items:center; justify-content:center; }
+.dm-frist-ik svg { width:26px; height:26px; }
+.dm-ark-rad { font-size:10.5px; padding:8px 0; border-top:1px solid var(--dm-hair); }
+.dm-ark-frist { text-align:center; padding-bottom:14px; }
+.dm-bock { width:34px; height:34px; border-radius:50%; background:var(--dm-sage); color:#fff; font-weight:800; font-size:18px; line-height:34px; margin:4px auto 8px; }
+.dm-ark-frist .dm-knapp { margin-top:12px; }
+html[data-stil="editorial"] .dm-vik { background:#2b3630; } html[data-stil="editorial"] .dm-ark-grepp { background:#3a4740; }
+@media (prefers-reduced-motion: reduce) { .dm-dela .dm-ark { transform:none; animation:none; } .dm-dela .dm-tap { animation:none; } }
